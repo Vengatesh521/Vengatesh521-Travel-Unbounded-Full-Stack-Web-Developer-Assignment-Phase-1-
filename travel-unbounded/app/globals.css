@@ -252,6 +252,62 @@ body {
 }
 
 /* =========================
+   DESTINATION ACTIONS
+========================= */
+
+.destination-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.destination-details-button,
+.destination-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 14px;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition: 0.3s ease;
+}
+
+/* View Details */
+
+.destination-details-button {
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #111827;
+}
+
+.destination-details-button:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+/* Enquire */
+
+.destination-button {
+  background: #111827;
+  color: white;
+  border: 1px solid #111827;
+}
+
+.destination-button:hover {
+  background: #374151;
+  border-color: #374151;
+}
+
+/* =========================
    CTA
 ========================= */
 
@@ -310,6 +366,62 @@ body {
 /* =========================
    MOBILE
 ========================= */
+
+/* =========================
+   DESTINATION ACTIONS
+========================= */
+
+.destination-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.destination-details-button,
+.destination-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 14px;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition: 0.3s ease;
+}
+
+/* View Details */
+
+.destination-details-button {
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #111827;
+}
+
+.destination-details-button:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+/* Enquire */
+
+.destination-button {
+  background: #111827;
+  color: white;
+  border: 1px solid #111827;
+}
+
+.destination-button:hover {
+  background: #374151;
+  border-color: #374151;
+}
 
 @media (max-width: 600px) {
   .hero {
