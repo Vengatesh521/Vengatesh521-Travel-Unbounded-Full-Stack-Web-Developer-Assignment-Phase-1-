@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 
+import Hero from "@/components/Hero";
 import DestinationSection from "@/components/DestinationSection";
 
 import {
@@ -11,45 +11,10 @@ import {
 export default function Home() {
   return (
     <main>
-      {/* =========================
-          HERO
-      ========================== */}
+      {/* HERO */}
+      <Hero />
 
-      <section className="hero">
-        <Image
-          src="/images/kerala.jpg"
-          alt="Beautiful Kerala"
-          fill
-          priority
-          sizes="100vw"
-        />
-
-        <div className="hero-overlay"></div>
-
-        <div className="hero-content">
-          <span className="hero-tag">TRAVEL UNBOUNDED</span>
-
-          <h1>
-            India's Most Trusted
-            <br />
-            Experiential Travel Experts
-          </h1>
-
-          <p>
-            Discover extraordinary destinations, create unforgettable memories
-            and experience the world your way.
-          </p>
-
-          <Link href="/contact" className="hero-button">
-            Plan Your Trip
-          </Link>
-        </div>
-      </section>
-
-      {/* =========================
-          INDIA DESTINATIONS
-      ========================== */}
-
+      {/* INDIA */}
       <div id="india">
         <DestinationSection
           subtitle="Explore India"
@@ -59,36 +24,37 @@ export default function Home() {
         />
       </div>
 
-      {/* =========================
-          INTERNATIONAL
-      ========================== */}
-
+      {/* INTERNATIONAL */}
       <div id="international">
         <DestinationSection
-          className="international-section"
           subtitle="Explore The World"
           title="International Destinations"
           description="Go beyond borders and discover amazing experiences around the world."
           destinations={internationalDestinations}
+          className="!max-w-none bg-slate-50"
         />
       </div>
 
-      {/* =========================
-          CTA
-      ========================== */}
+      {/* CTA */}
+      <section className="bg-gray-900 px-[30px] py-[100px] text-center text-white max-sm:px-5 max-sm:py-[70px]">
+        <div className="mx-auto max-w-[700px]">
+          <span className="text-[13px] font-bold tracking-[2px]">
+            YOUR JOURNEY STARTS HERE
+          </span>
 
-      <section className="home-cta">
-        <div>
-          <span>YOUR JOURNEY STARTS HERE</span>
+          <h2 className="my-[15px] text-[45px] font-bold max-sm:text-[34px]">
+            Ready to explore the world?
+          </h2>
 
-          <h2>Ready to explore the world?</h2>
-
-          <p>
+          <p className="mb-[30px] text-lg leading-[1.7] text-gray-300">
             Tell us where you want to go and we'll help you plan an
             unforgettable journey.
           </p>
 
-          <Link href="/contact" className="cta-button">
+          <Link
+            href="/contact"
+            className="inline-block rounded-md bg-white px-[30px] py-[15px] font-bold text-gray-900 transition hover:-translate-y-0.5"
+          >
             Plan Your Trip
           </Link>
         </div>
