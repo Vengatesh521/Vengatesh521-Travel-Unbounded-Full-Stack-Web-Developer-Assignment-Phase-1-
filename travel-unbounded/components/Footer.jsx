@@ -2,167 +2,188 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-950 text-white">
       {/* Footer Main */}
-      <div className="mx-auto grid max-w-[1200px] grid-cols-[2fr_1fr_1fr_1.2fr] gap-[50px] px-[30px] py-[75px] max-md:grid-cols-2 max-md:gap-x-[30px] max-md:gap-y-[45px] max-md:px-5 max-md:py-[60px] max-sm:grid-cols-1 max-sm:gap-[35px]">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-10 px-5 py-14 sm:px-6 sm:py-16 md:grid-cols-2 md:gap-x-10 md:gap-y-12 lg:grid-cols-[2fr_1fr_1fr_1.2fr] lg:gap-10 lg:px-8 lg:py-[70px]">
         {/* Company */}
-        <div className="max-w-[330px] max-md:col-span-full max-md:max-w-none max-sm:col-span-auto">
-          <Link
-            href="/"
-            className="mb-[22px] inline-flex flex-col leading-none no-underline"
-          >
-            <span className="text-[11px] font-semibold tracking-[3px] text-gray-400">
+        <div className="md:col-span-2 lg:col-span-1">
+          <Link href="/" className="mb-5 inline-flex flex-col leading-none">
+            <span className="text-[10px] font-semibold tracking-[3px] text-gray-500">
               TRAVEL
             </span>
 
-            <strong className="mt-[5px] text-[22px] tracking-[1px] text-white">
+            <strong className="mt-1 text-[21px] tracking-[1px] text-white">
               UNBOUNDED
             </strong>
           </Link>
 
-          <p className="mb-[25px] text-[15px] leading-[1.7] text-gray-400">
+          <p className="mb-6 max-w-[420px] text-sm leading-7 text-gray-400 sm:text-[15px]">
             Discover extraordinary destinations, create unforgettable memories,
             and experience the world your way.
           </p>
 
           <Link
             href="/contact"
-            className="inline-block rounded-md bg-white px-5 py-3 text-sm font-bold text-gray-900 transition duration-300 hover:-translate-y-0.5"
+            className="inline-flex items-center justify-center rounded-lg bg-white px-5 py-3 text-sm font-bold text-gray-900 transition-all hover:-translate-y-0.5 hover:bg-gray-100"
           >
             Plan Your Trip
           </Link>
         </div>
 
         {/* Quick Links */}
-        <div className="flex flex-col gap-[13px]">
-          <h3 className="mb-[10px] text-base font-bold text-white">
+        <div>
+          <h3 className="mb-5 text-sm font-bold uppercase tracking-wide text-white">
             Quick Links
           </h3>
 
-          <Link
-            href="/"
-            className="text-sm text-gray-400 transition hover:text-white"
-          >
-            Home
-          </Link>
+          <div className="flex flex-col gap-3">
+            <Link
+              href="/"
+              className="text-sm text-gray-400 transition hover:text-white"
+            >
+              Home
+            </Link>
 
-          <Link
-            href="/about"
-            className="text-sm text-gray-400 transition hover:text-white"
-          >
-            About Us
-          </Link>
+            <Link
+              href="/about"
+              className="text-sm text-gray-400 transition hover:text-white"
+            >
+              About Us
+            </Link>
 
-          <Link
-            href="/#india"
-            className="text-sm text-gray-400 transition hover:text-white"
-          >
-            India
-          </Link>
+            <Link
+              href="/#india"
+              className="text-sm text-gray-400 transition hover:text-white"
+            >
+              India
+            </Link>
 
-          <Link
-            href="/#international"
-            className="text-sm text-gray-400 transition hover:text-white"
-          >
-            International
-          </Link>
+            <Link
+              href="/#international"
+              className="text-sm text-gray-400 transition hover:text-white"
+            >
+              International
+            </Link>
 
-          <Link
-            href="/contact"
-            className="text-sm text-gray-400 transition hover:text-white"
-          >
-            Contact
-          </Link>
+            <Link
+              href="/contact"
+              className="text-sm text-gray-400 transition hover:text-white"
+            >
+              Contact
+            </Link>
+          </div>
         </div>
 
         {/* Popular Destinations */}
-        <div className="flex flex-col gap-[13px]">
-          <h3 className="mb-[10px] text-base font-bold text-white">
+        <div>
+          <h3 className="mb-5 text-sm font-bold uppercase tracking-wide text-white">
             Popular Destinations
           </h3>
 
-          <Link
-            href="/#india"
-            className="text-sm text-gray-400 transition hover:text-white"
-          >
-            Kerala
-          </Link>
+          <div className="flex flex-col gap-3">
+            <Link
+              href="/#india"
+              className="text-sm text-gray-400 transition hover:text-white"
+            >
+              Kerala
+            </Link>
 
-          <Link
-            href="/#india"
-            className="text-sm text-gray-400 transition hover:text-white"
-          >
-            Himachal Pradesh
-          </Link>
+            <Link
+              href="/#india"
+              className="text-sm text-gray-400 transition hover:text-white"
+            >
+              Himachal Pradesh
+            </Link>
 
-          <Link
-            href="/#india"
-            className="text-sm text-gray-400 transition hover:text-white"
-          >
-            Ladakh
-          </Link>
+            <Link
+              href="/#india"
+              className="text-sm text-gray-400 transition hover:text-white"
+            >
+              Ladakh
+            </Link>
 
-          <Link
-            href="/#india"
-            className="text-sm text-gray-400 transition hover:text-white"
-          >
-            Goa
-          </Link>
+            <Link
+              href="/#india"
+              className="text-sm text-gray-400 transition hover:text-white"
+            >
+              Goa
+            </Link>
 
-          <Link
-            href="/#international"
-            className="text-sm text-gray-400 transition hover:text-white"
-          >
-            Sri Lanka
-          </Link>
+            <Link
+              href="/#international"
+              className="text-sm text-gray-400 transition hover:text-white"
+            >
+              Sri Lanka
+            </Link>
+          </div>
         </div>
 
         {/* Contact */}
-        <div className="flex flex-col gap-[13px]">
-          <h3 className="mb-[10px] text-base font-bold text-white">
+        <div>
+          <h3 className="mb-5 text-sm font-bold uppercase tracking-wide text-white">
             Contact Us
           </h3>
 
-          <p className="text-sm leading-[1.6] text-gray-400">
-            <strong className="text-white">Email</strong>
-            <br />
-            hello@travelunbounded.com
-          </p>
+          <div className="flex flex-col gap-4">
+            <div>
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-gray-500">
+                Email
+              </p>
 
-          <p className="text-sm leading-[1.6] text-gray-400">
-            <strong className="text-white">Phone</strong>
-            <br />
-            +91 98765 43210
-          </p>
+              <a
+                href="mailto:hello@travelunbounded.com"
+                className="break-all text-sm text-gray-400 transition hover:text-white"
+              >
+                hello@travelunbounded.com
+              </a>
+            </div>
 
-          <p className="text-sm leading-[1.6] text-gray-400">
-            <strong className="text-white">Location</strong>
-            <br />
-            India
-          </p>
+            <div>
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-gray-500">
+                Phone
+              </p>
+
+              <a
+                href="tel:+919876543210"
+                className="text-sm text-gray-400 transition hover:text-white"
+              >
+                +91 98765 43210
+              </a>
+            </div>
+
+            <div>
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-gray-500">
+                Location
+              </p>
+
+              <p className="text-sm text-gray-400">India</p>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Bottom */}
-      <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-5 border-t border-gray-700 px-[30px] py-[22px] max-md:flex-col max-md:px-5 max-md:text-center">
-        <p className="m-0 text-[13px] text-gray-400">
-          © {new Date().getFullYear()} Travel Unbounded. All rights reserved.
-        </p>
+      <div className="border-t border-gray-800">
+        <div className="mx-auto flex max-w-[1200px] flex-col gap-4 px-5 py-6 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+          <p className="text-center text-xs leading-5 text-gray-500 md:text-left sm:text-[13px]">
+            © {new Date().getFullYear()} Travel Unbounded. All rights reserved.
+          </p>
 
-        <div className="flex gap-5 max-sm:flex-col max-sm:gap-[10px]">
-          <Link
-            href="/privacy"
-            className="text-[13px] text-gray-400 hover:text-white"
-          >
-            Privacy Policy
-          </Link>
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:gap-5">
+            <Link
+              href="/privacy"
+              className="text-xs text-gray-500 transition hover:text-white sm:text-[13px]"
+            >
+              Privacy Policy
+            </Link>
 
-          <Link
-            href="/terms"
-            className="text-[13px] text-gray-400 hover:text-white"
-          >
-            Terms & Conditions
-          </Link>
+            <Link
+              href="/terms"
+              className="text-xs text-gray-500 transition hover:text-white sm:text-[13px]"
+            >
+              Terms & Conditions
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
